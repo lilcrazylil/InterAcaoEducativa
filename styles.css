@@ -180,3 +180,62 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Estilos para telas pequenas (celulares) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .banner h1 {
+        font-size: 1.8em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    .curso-lista {
+        flex-direction: column;
+    }
+
+    .curso-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .formadores-lista {
+        flex-direction: column;
+    }
+
+    .formador-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para telas médias (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .curso-item {
+        width: 45%;
+    }
+
+    .formador-item {
+        width: 45%;
+    }
+}
+
+/* Estilos para telas grandes (desktops) */
+@media (min-width: 1024px) {
+    .curso-item {
+        width: 30%;
+    }
+
+    .formador-item {
+        width: 30%;
+    }
+}
