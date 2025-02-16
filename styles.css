@@ -1,0 +1,1116 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#cursos {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cursos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+.filtros {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filtros label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filtros select {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.curso-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    gap: 20px; /* Espaçamento entre os itens */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.curso-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.curso-item:hover {
+    transform: translateY(-10px);
+}
+.curso-item img {
+    width: 100%; /* A imagem ocupa 100% da largura do container */
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 8px 8px 0 0; /* Bordas arredondadas apenas no topo */
+}
+/* Ajustes para telas menores */
+@media (max-width: 1024px) {
+    .curso-lista {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .curso-lista {
+        grid-template-columns: 1fr; /* 1 coluna em celulares */
+    }
+}    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.curso-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.curso-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o título */
+}
+
+.curso-info h4 {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-top: 15px;
+    text-align: center; /* Centraliza os subtítulos */
+}
+
+.curso-info ul {
+    list-style: none;
+    padding-left: 0; /* Remove o padding padrão da lista */
+    text-align: center; /* Centraliza o texto da lista */
+    width: 100%; /* Faz a lista ocupar toda a largura */
+}
+
+.curso-info ul li {
+    margin-bottom: 10px;
+    text-align: left; /* Alinha o texto dos itens à esquerda */
+    display: inline-block; /* Permite centralizar os itens */
+    width: 80%; /* Define uma largura para os itens */
+}
+
+.curso-info ul li strong {
+    color: #e74c3c;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+#newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+#newsletter-form input {
+    padding: 5px;
+    flex: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsletter-form button:hover {
+    background-color: #2980b9;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+.curso-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+.curso-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.curso-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço disponível */
+    min-height: 300px; /* Define uma altura mínima para o container */
+}
+
+.curso-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.curso-info h4 {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.curso-info ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.curso-info ul li {
+    margin-bottom: 10px;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+}
+
+.curso-info ul li strong {
+    color: #e74c3c;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: auto; /* Coloca o botão no final do container */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+/* Estilo do header */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Estilo da logo */
+.logo {
+    display: inline-block;
+    width: 60px; /* Tamanho da logo */
+    height: 60px; /* Tamanho da logo */
+    border-radius: 50%; /* Formato circular */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o círculo */
+    border: 2px solid #fff; /* Borda branca ao redor da logo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Efeito de hover na logo */
+.logo:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra ao redor */
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Cor ao passar o mouse */
+}
+/* Estilo do banner */
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo da seção de cursos em destaque */
+#cursos-destaque {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#cursos-destaque h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.curso-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.curso-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.curso-item:hover {
+    transform: translateY(-10px);
+}
+
+.curso-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.curso-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.curso-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.curso-info p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Estilo da seção de formadores */
+#formadores {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#formadores h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.formadores-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.formador-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.formador-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.formador-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.formador-info p {
+    font-size: 1em;
+    color: #666;
+}
+/* Estilo da seção "Sobre Nós" */
+#sobre {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center; /* Centraliza o texto */
+}
+
+#sobre h2 {
+    font-size: 2.5em; /* Aumenta o tamanho do título */
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#sobre p {
+    font-size: 1.2em; /* Aumenta o tamanho do texto */
+    color: #666;
+    max-width: 800px; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza o parágrafo */
+    line-height: 1.8; /* Melhora a legibilidade */
+}
+#cursos-destaque {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#cursos-destaque h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.curso-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.curso-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.curso-item:hover {
+    transform: translateY(-10px);
+}
+
+.curso-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.curso-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.curso-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.curso-info p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .curso-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .curso-lista {
+        grid-template-columns: 1fr;
+    }
+}
+#formadores {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#formadores h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.formadores-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.formador-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.formador-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.formador-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.formador-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .formadores-lista {
+        grid-template-columns: 1fr; /* 1 coluna em telas menores */
+    }
+
+    .formador-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .formador-foto img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas pequenas */
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner-text .btn {
+    font-size: 1em;
+    padding: 10px 20px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 2em;
+    }
+
+    .banner-text p {
+        font-size: 1em;
+    }
+
+    .banner-text .btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+#sobre {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#sobre p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    #sobre h2 {
+        font-size: 2em;
+    }
+
+    #sobre p {
+        font-size: 1em;
+        max-width: 90%;
+    }
+}
+#cursos-destaque {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#cursos-destaque h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.curso-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.curso-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.curso-item:hover {
+    transform: translateY(-10px);
+}
+
+.curso-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.curso-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.curso-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.curso-info p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1024px) {
+    .curso-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .curso-lista {
+        grid-template-columns: 1fr;
+    }
+}
+#formadores {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#formadores h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.formadores-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.formador-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.formador-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.formador-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.formador-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .formadores-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .formador-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .formador-foto img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+#newsletter-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#newsletter-form input {
+    padding: 5px;
+    flex: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsletter-form button:hover {
+    background-color: #2980b9;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+.curso-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+.curso-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.curso-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço disponível */
+    min-height: 250px; /* Define uma altura mínima para o container */
+}
+
+.curso-info h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.curso-info p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: auto; /* Coloca o botão no final do container */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
