@@ -1114,3 +1114,71 @@ footer {
 .btn:hover {
     background-color: #2980b9;
 }
+/* Estilo do banner */
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%; /* Limita a largura do texto */
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner-text .btn {
+    font-size: 1em;
+    padding: 10px 20px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 1.8em; /* Reduz o tamanho do título */
+    }
+
+    .banner-text p {
+        font-size: 1em; /* Reduz o tamanho do parágrafo */
+    }
+
+    .banner-text .btn {
+        font-size: 0.9em; /* Reduz o tamanho do botão */
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 1.5em; /* Título ainda menor para celulares pequenos */
+    }
+
+    .banner-text p {
+        font-size: 0.9em; /* Parágrafo ainda menor para celulares pequenos */
+    }
+
+    .banner-text .btn {
+        font-size: 0.8em; /* Botão ainda menor para celulares pequenos */
+        padding: 6px 12px;
+    }
+}
